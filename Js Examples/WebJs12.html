@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Js</title>
+</head>
+<body onload="myFunction()">
+<p> when you reset the form, a function is triggered which alert some text</p>
+<form onReset= "MyFunction()">
+Enter Name: <input type = "text">
+		<input type = "reset">
+</form>
+<script>
+function MyFunction(){
+	alert("the form was reset");
+}
+
+function myFunction(){
+	alert("page is loaded");
+}
+
+	function myFunction1(){
+	 var x= document.getElementById("mySelect").value;
+	document.getElementById("demo").innerHTML= "you selected: " + x ;
+}
+</script>
+
+<p> select a new car from the list.</p>
+<select id="mySelect" onChange = "myFunction1()">
+	<option value = "Audi"> Audi </option>
+	<option value = "BMW"> BMW </option>
+	<option value = "Volvo"> Volvo </option>
+	<option value = "CHR"> CHR </option>
+</select>
+<p>when you select a new car, a function is triggerd which outputs the value of the selected car</p>
+<p id="demo"></p>
+
+
+
+</body>
+</html>

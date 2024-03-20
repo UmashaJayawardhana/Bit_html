@@ -1,0 +1,33 @@
+<html><head>
+<title>Form Validation Checking</title>
+ <script language="javascript">
+ //Calculate to check form input
+ function checkForm() {
+ if (document.fm.yubin.value==""){
+ alert("please input the postal code.");
+ return false;
+ }
+ if (document.fm.address.value==""){
+ alert("please input the address.");
+ return false;
+ }
+ if (document.fm.name.value==""){
+ alert("please input the name.");
+ return false;
+ }
+ return true;
+ }
+//-->
+ </script> </head><body>
+ Please fill up these text boxes(all inputs are required).<br>
+<form action ="flm.cgi" name="fm" onSubmit="return checkForm()">
+Postal Code:
+<input type="text" Name="yubin" size="8"><br>
+Address:
+    <input type="text" Name="address" size="40"><br>
+Name:
+      <input type="text" Name="name" size="20"><br>
+     <input type="submit" value="Submit">
+
+     <input type="reset" value="Cancel">
+  </form></body></html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Js</title>
+<script type="text/javascript">
+	function warn1(){
+		var fname = document.myfun.msg.value;
+		alert("This is a warning message !");
+		document.write(msg);
+	}
+
+	function ValidateForm(){
+	var x = document.myform1.fname1.value;
+	if(x == ""){
+	alert("Name must be filled out");
+	}}
+
+	function warn(){
+	var fname = document.myform.fname.value;
+	var lname = document.myform.lname.value;
+	document.write("First Name: " + fname);
+	document.write("<br>");
+	document.write("Last Name: " + lname);
+}
+
+</script>
+</head>
+<body>
+
+	
+
+<h1>HTML Form to JavaScript</h1>
+<p>click the following button to see the result</p>
+
+<form name="myform">
+First Name: <input type="text" name="fname"><br/>
+Last Name: <input type="text" name="lname"><br/>
+<input type="button" value="Click me" onClick="warn()">
+</form>
+
+<h1>HTML Form to JavaScript</h1>
+<p>click the following button to seee the result</p>
+
+<form name="myfun">
+<input type="text" name="msg"><br/>
+<input type="button" value="Click me" onClick="warn1()">
+</form>
+
+<form name="myform1" onSubmit="ValidateForm()">
+Name: <input type="text" name="fname1">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

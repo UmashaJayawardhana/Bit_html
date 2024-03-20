@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Js</title>
+</head>
+<body>
+Select some of the text : <input type = "text" value="Hello World" onSelect="MyFunction()">
+</br>
+Enter Your Name: <input type = "text" onFocus="MyFunction1(this)">
+<p>When the input type field gets focus, a function is triggered which background-coloe</p>
+
+<script>
+function MyFunction(){
+	alert("You select some text!");
+document.write("Execute a javaScript when some text has benn selected;")
+}
+
+function MyFunction1(x){
+	x.style.background = "yellow";
+}
+</script>
+</body>
+</html>

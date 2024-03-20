@@ -1,0 +1,206 @@
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+	<body>
+	<h>HTML Forms</h1>
+	<h2>Registration Form</h2>
+	<table border=1>
+	<tr>
+	<form>
+	<th width=100>Frist Name:</th>
+	<td width=500><INPUT TYPE="TEXT" NAME="Frist Name" SIZE="50"></td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Last Name:</th>
+	<td><INPUT TYPE="TEXT" NAME="Last Name" SIZE="50"></td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Password:</th>
+	<td><INPUT TYPE="PASSWORD" NAME="Password" SIZE="10"></td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Subject:</th>
+	<td>
+	<SELECT NAME="Subject" SIZE="2">
+	<option>C.Maths</option>
+	<option>Physics</option>
+	<option>Chemistry</option>
+	<option>Biology</option>
+	</SELECT>
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Town:</th>
+	<td>
+	<INPUT TYPE="RADIO" NAME="Town" VALUE="Matara"> Matara</br>
+	<INPUT TYPE="RADIO" NAME="Town" VALUE="Galle"> Galle </br>
+	<INPUT TYPE="RADIO" NAME="Town" VALUE="Kandy"> Kandy </br>
+	<INPUT TYPE="RADIO" NAME="Town" VALUE="Colombo"> Colombo </br>
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Hobbies</th>
+	<td>
+	<INPUT TYPE="CHECKBOX" NAME="Cricket"> Cricket
+	<INPUT TYPE="CHECKBOX" NAME="Football"> Football
+	<INPUT TYPE="CHECKBOX" NAME="Rugby"> Rugby
+	<INPUT TYPE="CHECKBOX" NAME="Tennies"> Tennies
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Comment:</th>
+	<td>
+	<TEXTAREA NAME="message" ROWS="5" COLS="60">
+	Write your message here
+	</TEXTAREA>
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<td colspan=2 align="center">
+	<INPUT TYPE="SUBMIT" VALUE="Send">
+	<INPUT TYPE="RESET" VALUE="Cancle">
+	</td>
+	</form>
+	</tr>
+	</table></br>
+	<table border=1>
+	<form action="action_page.php">
+	<tr>
+	<th width=300>Age:</th>
+	<td width=300>
+	<INPUT TYPE="NUMBER" NAME="AGE" MIN="18" MAX="25">
+	<INPUT TYPE="SUBMIT">
+	</td>
+	</tr>
+	</form>
+	<form action="action_page.php">
+	<tr>
+	<th>Marks:</th>
+	<td>
+	<INPUT TYPE="NUMBER" NAME="MAKRS" MIN="0" MAX="100" STEP="10" VALUE="30">
+	<INPUT TYPE="SUBMIT"> 
+	</td>
+	</tr>
+	</form>
+	<tr>
+	<form>
+	<th>Birthday:</th>
+	<td>
+	<INPUT TYPE="DATE" NAME="BIRTHDAY">
+	<INPUT TYPE="SUBMIT">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Enter a date before 1980/01/01:</th>
+	<td>
+	<INPUT TYPE="DATE" NAME="BIRTHDAY" MAX="1979/12/31"></BR>
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Enter a date after 2000/01/01:</th>
+	<td>
+	<INPUT TYPE="DATE" NAME="BIRTHDAY" MIN="2000/01/02">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form action="action_page.php">
+	<th>Birthday(month and yera)</th>
+	<td>
+	<INPUT TYPE="MONTH" NAME="BDAYMONTH">
+	<INPUT TYPE="SUBMIT">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Select a week</th>
+	<td>
+	<INPUT TYPE="WEEK" NAME="WEEK_YEAR">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Select a time</th>
+	<td>
+	<INPUT TYPE="TIME" NAME="USR_TIME">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form action="action_page.php">
+	<th>Birthday(date and time)</th>
+	<td>
+	<INPUT TYPE="DATETIME-LOCAL" NAME="BDAYTIME">
+	<INPUT TYPE="SUBMIT" VALUE="SEND">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>E-mail</th>
+	<td>
+	<INPUT TYPE="EMAIL" NAME="EMAIL"
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Search Google:</th>
+	<td>
+	<INPUT TYPE="SEARCH" NAME="GOOGLESEARCH">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form>
+	<th>Add your homepage:</th>
+	<td>
+	<INPUT TYPE="URL" NAME="HOMEPAGE">
+	</td>
+	</form>
+	</tr>
+	<tr>
+	<form action="action_page.php">
+	<td colspan=2>
+	<INPUT TYPE="TEXT" NAME="FNAME" PLACEHOLDER="Frist name"></br>
+	<INPUT TYPE="TEXT" NAME="LNAME" PLACEHOLDER="Last name"></br>
+	<INPUT TYPE="SUBMIT" VALUE="Submit">
+	</td>
+	</form>
+	</tr>
+	</table>
+	</br>
+	<form>
+	<fieldset>
+	<legend>Personalia:</legend>
+	Name: <input type="text"></br>
+	Email: <input type="text"></br>
+	Date of birth: <input type="date" name="bday">
+	</fieldset>
+	</form>
+	<P>Insert your image: <input type="file" name="as"></p>
+	<a herf="application form.doc">Downlaod your application(doc)</a></br>
+	<a herf="application form.pdf">PDF</a>
+	</body>
+</html>
